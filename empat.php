@@ -4,16 +4,15 @@ class Author {
     public $name;
     public $deskripsi;
     public function show($type) {
-        $result = "";
         if ($type === 'nama') {
-            $result = "Nama: " . $this->name;
+           return ['Nama: ' . $this->name];
         } elseif ($type === 'deskripsi') {
-            $result = "Deskripsi: " . $this->deskripsi;
+            return [ 'Deskripsi: ' . $this->deskripsi];
         } elseif ($type === 'all') {
-            $result = "Nama: " . $this->name . "\nDeskripsi: " . $this->deskripsi;
+            return [ 'Nama: ' . $this->name . "\nDeskripsi: " . $this->deskripsi];
         }
 
-        return $result;
+        return [];
     }
 }
 
@@ -79,11 +78,12 @@ $hasil = new Author();
 $hasil -> name = 'Elga';
 $hasil -> deskripsi = 'Berkuliah di Universitas Tanjung Pura'; 
 echo "-- Pemanggilan berdasarkan nama -- \n";
-echo $hasil->show('nama') . "\n"; 
+print_r($hasil->show('nama')); 
 echo "-- Pemanggilan berdasarkan Deskripsi -- \n";
-echo $hasil->show('deskripsi') . "\n"; 
+print_r($hasil->show('deskripsi')) ; 
 echo "-- Pemanggilan berdasarkan All -- \n";
-echo $hasil->show('all') . "\n"; 
+print_r ($hasil->show('all'));
+echo "\n";
 
 echo "--Class Book-- \n";
 $buku = new Book(000, "Pemrograman Berorientasi Objek", "Sebuah buku tentang materi pemrograman ", "Pemrograman", "Bahasa Indonesia", 27, "Elga", "Tara");
