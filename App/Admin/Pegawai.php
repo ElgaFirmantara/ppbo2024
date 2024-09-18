@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Admin;
+
 class Pegawai {
     public int $nip;
     public string $nama;

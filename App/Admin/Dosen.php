@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Admin;
+
 class Dosen extends Pegawai {
     public string $nidn;
 
