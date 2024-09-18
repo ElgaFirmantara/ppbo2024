@@ -1,6 +1,6 @@
 {
     "name": "elgafirmantara/ppbo2024",
-    "description": "Merupakan Package untuk latihan pemrograman berorientasi objek",
+    "description": "Merupakan package untuk latihan pemrograman berorientasi objek",
     "type": "project",
     "license": "MIT",
     "require": {},
