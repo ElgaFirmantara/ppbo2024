@@ -1,6 +1,5 @@
 <?php
 
-// File: App/Admin/TenagaKependidikan.php
 namespace App\Admin;
 
 class TenagaKependidikan extends Pegawai {
